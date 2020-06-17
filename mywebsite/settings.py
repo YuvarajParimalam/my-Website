@@ -26,7 +26,7 @@ SECRET_KEY = 'grbaqxf3&*^rohdhgtp01aq%3d!1&%d8pga^@a!p_15y367o@m'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -132,7 +132,7 @@ STATIC_URL = '/staticfiles/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'staticfiles')
 ]
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # if os.getcwd() == '/app':
 #     import dj_database_url
 #     db_from_env = dj_database_url.config(conn_max_age=500)
